@@ -645,7 +645,7 @@ class PacketListener(threading.Thread):
                     #     self._log.warning("Serial exception while reading: %s", exc)
                     #     continue
                     # raise exc
-                    self._trigger_error_callbacks(exec)
+                    self._trigger_error_callbacks(exc)
                     self.__stop = True
                     break
 
