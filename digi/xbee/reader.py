@@ -646,7 +646,6 @@ class PacketListener(threading.Thread):
                     #     continue
                     # raise exc
                     self._trigger_error_callbacks(exc)
-                    self.__stop = True
                     break
 
                 if raw_packet is not None:
